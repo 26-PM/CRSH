@@ -12,9 +12,9 @@ app.get("/", (req, res) => {
     // Render the "index" view using EJS
     res.render("index");
 });
-app.get("/read", (req, res) => {
-    // Render the "index" view using EJS
-    res.render("read");
+app.get("/read", async(req, res) => {
+    let users=await userModel.find();
+    res.render("read",users);
 });
 
 app.post("/create",async(req,res)=>{
