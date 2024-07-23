@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
-mongoose.connect("").then(() => console.log('Database connection successful'))
+mongoose.connect("mongodb+srv://root:root@anonymessage.sx3fsbh.mongodb.net/?retryWrites=true&w=majority&appName=anonyMessage").then(() => console.log('Database connection successful'))
 .catch(err => console.error('Database connection error:'));
 const userSchema = mongoose.Schema({
-    username: String,
+    name: String,
     email: String,
     image: String 
 })
