@@ -1,5 +1,7 @@
 # CRSH Application
 
+## CRSH - CReateSHow
+
 ## Overview
 
 CRSH is a robust and user-friendly application built with Mongoose and Express.js. This application enables the creation and real-time visibility of users, ensuring a seamless and interactive user management experience.
